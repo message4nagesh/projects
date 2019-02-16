@@ -1,0 +1,13 @@
+node {
+
+   stage('SCM') {
+	  git 'https://github.com/message4nagesh/projects.git'
+   }
+   
+   stage ('build the packages') {
+	  sh 'mvn package'
+   }
+   
+   
+
+}
